@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+// Import a Google Font
+// @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+
+//pallette
+$white: white;
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+$grey-dark: #575757;
+$grey-light: #8d949c;
+$primary: #a5bce9;
+$link: #365ead;
+$widescreen-enabled: true;
+$fullhd-enabled: true;
+
+// Update some of Bulma's component variables
+// $body-background-color: $beige-lighter;
+// $control-border-width: 2px;
+// $input-border-color: transparent;
+// $input-shadow: none;
+
+// Import only what you need from Bulma
+@import "node_modules/bulma/sass/utilities/_all.sass";
+@import "node_modules/bulma/sass/base/_all.sass";
+@import "node_modules/bulma/sass/elements/button.sass";
+@import "node_modules/bulma/sass/elements/container.sass";
+@import "node_modules/bulma/sass/elements/form.sass";
+@import "node_modules/bulma/sass/elements/title.sass";
+@import "node_modules/bulma/sass/components/navbar.sass";
+@import "node_modules/bulma/sass/layout/hero.sass";
+@import "node_modules/bulma/sass/layout/section.sass";
+
+.profile-pic {
+  border-radius: 50%;
+  border: 4px solid #9bb3e3;
+}
+content,
+section {
+  display: block;
+}
+
+.page {
+  display: block;
+  width: 100%;
+  //   max-height: calc(100vh - 152px);
+  padding: 2rem;
+  color: $white;
+}
+
+.page--dark {
+  &__link {
+    color: $link;
+  }
+  &__link:hover {
+    color: lighten($link, 8%);
+  }
+}
+
+.main-footer {
+  height: 4rem;
+  background-color: $grey-lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#hero {
+  background-color: #809fdf;
+}
+
+section#projects {
+  background-color: #8dd2e2;
+}
