@@ -8,10 +8,10 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/regular.js" integrity="sha384-XrvTJeiQ46fxxPrZP6fay5yejA2FV4G1XsS8E4Piz6Fz+7FaEFTw7A7GR972irVV"
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/regular.js" integrity="sha384-XrvTJeiQ46fxxPrZP6fay5yejA2FV4G1XsS8E4Piz6Fz+7FaEFTw7A7GR972irVV"
     crossorigin="anonymous" defer></script>
   <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/fontawesome.js" integrity="sha384-bNOdVeWbABef8Lh4uZ8c3lJXVlHdf8W5hh1OpJ4dGyqIEhMmcnJrosjQ36Kniaqm"
-    crossorigin="anonymous" defer></script>
+    crossorigin="anonymous" defer></script> -->
 
   <script src="index.js"></script>
 </head>
@@ -50,14 +50,25 @@
       </div>
     </nav>
   </header>
-  <section id="hero" class="section page page--dark">
-    <content class="container dark-panel">
-      <include src="./short-about.html"></include>
+  <section id="hero" class="section page page--dark ">
+    <content class="container dark-panel columns">
+      <include src="./pages/short-about.html"></include>
     </content>
   </section>
-  <!-- <section id="projects" class="section page">
-    <content class="container"></content>
+  <!-- <section id="projects" class="section page page--dark ">
+    <content class="container dark-panel columns">
+      <include src="./short-about.html"></include>
+    </content>
   </section> -->
+  <section id="contact" class="section page page--dark ">
+    <content class="container dark-panel">
+      <h2 class="title is-2">Contact Me</h2>
+      <div class="columns">
+        <include src="./pages/contact.html"></include>
+      </div>
+    </content>
+  </section>
+
   <footer class="footer main-footer">
     <div class="content has-text-centered">
       <p>
