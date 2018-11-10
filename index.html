@@ -1,81 +1,84 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Nitin Jadhav's Portfolio</title>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Nitin Jadhav's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+      <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/regular.js" integrity="sha384-XrvTJeiQ46fxxPrZP6fay5yejA2FV4G1XsS8E4Piz6Fz+7FaEFTw7A7GR972irVV"
+        crossorigin="anonymous" defer></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/fontawesome.js" integrity="sha384-bNOdVeWbABef8Lh4uZ8c3lJXVlHdf8W5hh1OpJ4dGyqIEhMmcnJrosjQ36Kniaqm"
+        crossorigin="anonymous" defer></script>
+    -->
 
-  <!-- <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/regular.js" integrity="sha384-XrvTJeiQ46fxxPrZP6fay5yejA2FV4G1XsS8E4Piz6Fz+7FaEFTw7A7GR972irVV"
-    crossorigin="anonymous" defer></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/fontawesome.js" integrity="sha384-bNOdVeWbABef8Lh4uZ8c3lJXVlHdf8W5hh1OpJ4dGyqIEhMmcnJrosjQ36Kniaqm"
-    crossorigin="anonymous" defer></script> -->
+    <script src="index.js"></script>
+  </head>
 
-  <script src="index.js"></script>
-</head>
+  <body>
+    <header>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item title-font" href="/"> NITIN JADHAV </a>
 
-<body>
-
-  <header>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-          <strong>NITIN JADHAV</strong>
-        </a>
-
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <!-- <a class="navbar-item">
-            Projects
-          </a> -->
-          <a class="navbar-item" href="https://medium.com/@nitinj">
-            Blog
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true"></span> <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
           </a>
-          <a class="navbar-item" href="https://www.behance.net/nitinjadhav-ux">
-            Design Portfolio
-          </a>
-          <!-- <a class="navbar-item">
-            Work With Me
-          </a> -->
         </div>
-      </div>
-    </nav>
-  </header>
-  <section id="hero" class="section page page--dark ">
-    <content class="container dark-panel columns">
-      <include src="./pages/short-about.html"></include>
-    </content>
-  </section>
-  <!-- <section id="projects" class="section page page--dark ">
-    <content class="container dark-panel columns">
-      <include src="./short-about.html"></include>
-    </content>
-  </section> -->
-  <section id="contact" class="section page page--dark ">
-    <content class="container dark-panel">
-      <h2 class="title is-2">Contact Me</h2>
-      <div class="columns">
+
+        <div id="navbarBasicExample" class="navbar-menu title-font">
+          <div class="navbar-start">
+            <!--
+              <a class="navbar-item">
+                Projects
+              </a>
+            -->
+            <a class="navbar-item" href="https://medium.com/@nitinj"> Blog </a>
+            <a
+              class="navbar-item"
+              href="https://www.behance.net/nitinjadhav-ux"
+            >
+              Design Portfolio
+            </a>
+            <a class="navbar-item" href="/#contact"> Contact </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id="hero" class="section page">
+      <content class="container dark-panel columns">
+        <include src="./pages/short-about.html"></include>
+      </content>
+    </section>
+    <!--
+      <section id="projects" class="section page page--dark ">
+        <content class="container dark-panel columns">
+          <include src="./short-about.html"></include>
+        </content>
+      </section>
+    -->
+    <section id="contact" class="section page page--dark ">
+      <content class="container dark-panel">
         <include src="./pages/contact.html"></include>
+      </content>
+    </section>
+
+    <footer class="footer main-footer page page--dark">
+      <div class="content has-text-centered">
+        <p>
+          Handcoded in 2018 with <a href="https://bulma.io">Bulma</a> and
+          <a href="https://parceljs.org/">ParcelJS</a>
+        </p>
       </div>
-    </content>
-  </section>
-
-  <footer class="footer main-footer">
-    <div class="content has-text-centered">
-      <p>
-        Handcoded in 2018 with <a href="https://bulma.io">Bulma</a> and <a href="https://parceljs.org/">ParcelJS</a>
-      </p>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
