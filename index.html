@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Nitin Jadhav's Portfolio</title>
-
+    <link rel="shortcut icon" href="./media//favicon.ico" />
+    <link rel="icon" href="./media/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!--
@@ -18,54 +19,57 @@
   </head>
 
   <body>
-    <header>
-      <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="navbar-item title-font" href="/"> NITIN JADHAV </a>
+    <div class="main-header-container">
+      <header class="container">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <div class="navbar-item">
+              <a class="logo-main-text inline-block" href="/"> NJ </a>
+              <div style="margin-left:1rem;" class="flex">
+                <div style="font-weight: bold;">NITIN JADHAV</div>
+                <div style="font-weight: 200;">Designer & Developer</div>
+              </div>
+            </div>
 
-          <a
-            role="button"
-            class="navbar-burger burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-          >
-            <span aria-hidden="true"></span> <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-
-        <div id="navbarBasicExample" class="navbar-menu title-font">
-          <div class="navbar-start">
-            <!--
-              <a class="navbar-item">
-                Projects
-              </a>
-            -->
-            <a class="navbar-item" href="https://medium.com/@nitinj"> Blog </a>
             <a
-              class="navbar-item"
-              href="https://www.behance.net/nitinjadhav-ux"
+              role="button"
+              class="navbar-burger burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
             >
-              Design Portfolio
+              <span aria-hidden="true"></span> <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
             </a>
-            <a class="navbar-item" href="/#contact"> Contact </a>
           </div>
-        </div>
-      </nav>
-    </header>
-    <section id="hero" class="section page">
-      <content class="container dark-panel columns">
-        <include src="./pages/short-about.html"></include>
-      </content>
-    </section>
-    <!--
-      <section id="projects" class="section page page--dark ">
+
+          <div id="navbarBasicExample" class="navbar-menu title-font">
+            <div class="navbar-end">
+              <!--
+                <a class="navbar-item">
+                Projects
+                </a>
+              -->
+              <a class="navbar-item" href="https://medium.com/@nitinj">
+                Blog
+              </a>
+              <a
+                class="navbar-item"
+                href="https://www.behance.net/nitinjadhav-ux"
+              >
+                UX Portfolio
+              </a>
+              <a class="navbar-item" href="/#contact"> Contact </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section id="hero" class="section page">
         <content class="container dark-panel columns">
-          <include src="./short-about.html"></include>
+          <include src="./pages/short-about.html"></include>
         </content>
       </section>
-    -->
+    </div>
     <section id="contact" class="section page page--dark ">
       <content class="container dark-panel">
         <include src="./pages/contact.html"></include>

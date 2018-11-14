@@ -1,7 +1,6 @@
 @charset "utf-8";
 
-// Google Font - not used for performance optimizations
-@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700");
+// Google Font - not used for performance optimization
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 
 //THEME: color pallette
@@ -13,7 +12,7 @@ $grey-dark: #575757;
 $grey-light: #8d949c;
 $grey-lighter: #b8bfc7;
 $primary: #a5bce9;
-$link: $grey-light;
+$link: $white;
 $widescreen-enabled: true;
 $fullhd-enabled: true;
 //$turquoise
@@ -35,7 +34,6 @@ textarea {
 /* main styles */
 
 .title-font {
-  font-family: "Merriweather", sans-serif;
   font-weight: 700;
 }
 
@@ -45,6 +43,44 @@ p {
 
 .container {
   margin: 0 auto;
+}
+
+.main-header-container {
+  // height: 8rem;
+  .navbar {
+    background-color: inherit;
+  }
+  .navbar-item,
+  .navbar-link,
+  a {
+    color: $white;
+  }
+
+  a:hover {
+    color: darken($white, 10%);
+  }
+
+  a.navbar-item:hover,
+  a.navbar-item.is-active,
+  .navbar-link:hover,
+  .navbar-link.is-active {
+    background-color: inherit;
+  }
+  .navbar-menu {
+    background-color: inherit;
+  }
+  color: $white;
+  background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #2f80ed,
+    #56ccf2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #2f80ed,
+    #56ccf2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .profile-pic-container {
@@ -74,7 +110,7 @@ section {
     text-decoration: underline;
   }
   &__link:hover {
-    color: lighten($link, 8%);
+    color: darken($link, 20%);
   }
 }
 
@@ -97,7 +133,7 @@ section {
 }
 
 section#hero {
-  background-color: $white;
+  // background-color: $white;
 }
 
 section#projects {
@@ -128,3 +164,17 @@ section#contact {
 }
 
 /* utilities */
+
+.logo-main-text {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: bold;
+  /* color: var(--grey-darker); */
+  display: inline-block;
+  text-decoration: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  user-select: none;
+  margin-left: 0.5rem;
+}
