@@ -1,4 +1,5 @@
 import "./main.scss";
+import { initFormValidation } from "./contact-form-validation";
 console.log("init website");
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -23,4 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+});
+
+window.addEventListener("load", function() {
+  //init form handling
+  initFormValidation();
 });
