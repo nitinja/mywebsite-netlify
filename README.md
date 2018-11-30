@@ -3,7 +3,7 @@
 ## Current domain is nitinj.com
 
 - Simple website, without any UI framework.
-- In future, VUE or react may be added
+- In future, VUE/React/Hyperapp may be added
 - Parcel bundler with posthtml support
-- SASS css post-processor
-- Bulma CSS framework
+- SASS, Postcss
+- Tailwind CSS framework
