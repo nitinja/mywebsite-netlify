@@ -1,49 +1,37 @@
-<header class="container">
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <div class="navbar-item">
-        <a class="logo-main-text inline-block" href="/"> NJ </a>
-        <div style="margin-left:1rem;" class="flex">
-          <div style="font-weight: bold;">NITIN JADHAV</div>
-          <div style="font-weight: 200;">Designer & Developer</div>
-        </div>
-      </div>
-
-      <a
-        role="button"
-        class="navbar-burger burger"
-        aria-label="menu"
-        aria-expanded="false"
-        data-target="navbarBasicExample"
-      >
-        <span aria-hidden="true"></span> <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
+<nav class="container mx-auto flex justify-between flex-wrap">
+  <div class="flex">
+    <div class="logo-main-text mr-2">NJ</div>
+    <div class="flex flex-col text-l text-purple-lighter">
+      <div class="flex-1 font-bold">Nitin Jadhav</div>
+      <div class="flex-1 font-light">Designer & Developer</div>
     </div>
-
-    <div id="navbarBasicExample" class="navbar-menu title-font">
-      <div class="navbar-end">
-        <!--
-          <a class="navbar-item">
-          Projects
-          </a>
-        -->
-        <a
-          class="navbar-item"
-          target="_blank"
-          href="https://medium.com/@nitinj"
-        >
-          Blog
-        </a>
-        <a
-          class="navbar-item"
-          target="_blank"
-          href="https://www.behance.net/nitinjadhav-ux"
-        >
-          UX Portfolio
-        </a>
-        <a class="navbar-item" href="/#contact"> Contact </a>
-      </div>
-    </div>
-  </nav>
-</header>
+  </div>
+  <div class="block lg:hidden" id="hamburger-icon">
+    <span></span> <span></span> <span></span> <span></span>
+  </div>
+  <div
+    id="menu-items"
+    class="hidden w-full block flex-grow lg:flex lg:justify-end lg:items-center lg:w-auto font-bold"
+  >
+    <a
+      target="_blank"
+      href="https://medium.com/@nitinj"
+      class="block mt-4 lg:inline-block lg:mt-0 mr-4 text-white hover:text-blue-lighter"
+    >
+      Blog
+    </a>
+    <a
+      target="_blank"
+      href="https://www.behance.net/nitinjadhav-ux"
+      class="block mt-4 lg:inline-block lg:mt-0 mr-4 text-white hover:text-blue-lighter"
+    >
+      UX Portfolio
+    </a>
+    <a
+      href="/#contact"
+      class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-lighter"
+    >
+      Contact
+    </a>
+  </div>
+</nav>

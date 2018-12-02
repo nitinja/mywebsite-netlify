@@ -7,38 +7,45 @@
     <link rel="shortcut icon" href="./media//favicon.ico" />
     <link rel="icon" href="./media/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!--
-      <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/regular.js" integrity="sha384-XrvTJeiQ46fxxPrZP6fay5yejA2FV4G1XsS8E4Piz6Fz+7FaEFTw7A7GR972irVV"
-        crossorigin="anonymous" defer></script>
-      <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/fontawesome.js" integrity="sha384-bNOdVeWbABef8Lh4uZ8c3lJXVlHdf8W5hh1OpJ4dGyqIEhMmcnJrosjQ36Kniaqm"
-        crossorigin="anonymous" defer></script>
-    -->
   </head>
 
-  <body>
-    <section class="section main-section page page--dark main-header-container">
+  <body class="">
+    <section class="h-screen bg-purple-dark px-4 py-8">
       <include src="./src/pages/header.html"></include>
-      <section id="hero" class="section">
-        <content class="container dark-panel columns">
-          <include src="./src/pages/short-about.html"></include>
+      <include src="./src/pages/hero.html"></include>
+      <div class="scroll-mouse mx-auto my-2">
+        <div class="scroll-mouse-point"></div>
+      </div>
+    </section>
+    <section class="h-screen bg-purple-lighter px-4 py-8">sd</section>
+    <section class="h-screen bg-red-light">sd</section>
+    <section class="bg-black px-4">
+      <include src="./src/pages/footer.html"></include>
+    </section>
+    <!--
+      <section class="">
+        <include src="./src/pages/header.html"></include>
+        <section id="hero" class="section">
+          <content class="container dark-panel columns">
+            <include src="./src/pages/short-about.html"></include>
+          </content>
+        </section>
+      </section>
+      <section id="contact" class="section main-section page page--dark ">
+        <content class="container dark-panel">
+          <include src="./src/pages/contact.html"></include>
         </content>
       </section>
-    </section>
-    <section id="contact" class="section main-section page page--dark ">
-      <content class="container dark-panel">
-        <include src="./src/pages/contact.html"></include>
-      </content>
-    </section>
 
-    <footer class="footer main-footer page page--dark">
-      <div class="content has-text-centered">
-        <p>
-          Handcoded in 2018 with <a href="https://bulma.io">Bulma</a> and
-          <a href="https://parceljs.org/">ParcelJS</a>
-        </p>
-      </div>
-    </footer>
+      <footer class="footer main-footer page page--dark">
+        <div class="content has-text-centered">
+          <p>
+            Handcoded in 2018 with <a href="https://bulma.io">Bulma</a> and
+            <a href="https://parceljs.org/">ParcelJS</a>
+          </p>
+        </div>
+      </footer>
+    -->
     <script src="./src/index.js"></script>
   </body>
 </html>

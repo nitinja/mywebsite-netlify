@@ -54,6 +54,9 @@ let colors = {
   "red-light": "#ef5753",
   "green-light": "#51d88a",
 
+  blue: "#3490DC",
+  "blue-light": "#6CB2EB",
+
   "purple-dark": "#794acf",
   "purple-lighter": "#d6bbfc"
 };
@@ -174,11 +177,13 @@ module.exports = {
   */
 
   textSizes: {
+    xs: ".75rem", // 14px
     sm: ".875rem", // 14px
     base: "1rem", // 16px
     xl: "1.25rem", // 20px
     "2xl": "1.5rem", // 24px
-    "4xl": "2.25rem" // 36px
+    "4xl": "2.25rem", // 36px
+    "6xl": "4rem" // 36px
   },
 
   /*

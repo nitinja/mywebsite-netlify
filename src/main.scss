@@ -14,3 +14,72 @@
 @tailwind preflight;
 @tailwind components;
 @tailwind utilities;
+
+@import "menu";
+
+body {
+  @apply font-sans;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+a {
+  @apply text-blue;
+  text-decoration: none;
+  &:hover {
+    @apply text-blue-light;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.profile-pic {
+}
+.profile-pic-shadow {
+  box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.329);
+}
+
+.logo-main-text {
+  @apply font-serif;
+  @apply text-white;
+
+  font-size: 5rem;
+  line-height: 4rem;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  user-select: none;
+}
+
+/* animated mouse scroll indicator */
+.scroll-mouse {
+  width: 32px;
+  height: 48px;
+  border: 2px solid rgba(255, 255, 255, 0.06);
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.scroll-mouse-point {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  animation: mousemove 2s infinite;
+}
+
+@keyframes mousemove {
+  from {
+    top: 8px;
+    opacity: 0;
+  }
+  to {
+    top: 34px;
+    opacity: 1;
+  }
+}
