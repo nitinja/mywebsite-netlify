@@ -17,6 +17,29 @@
 
 @import "menu";
 
+$black: #22292f;
+$grey-darker: #606f7b;
+$grey: #b8c2cc;
+$grey-light: #dae1e7;
+$white: #ffffff;
+
+$beige: #f8f8f8;
+
+$red-light: #ef5753;
+$green-light: #51d88a;
+
+$blue: #3490dc;
+$blue-dark: #34495e;
+$blue-light: #6cb2eb;
+
+$purple-dark: #794acf;
+$purple-lighter: #d6bbfc;
+
+/* animate EVERYTHING */
+* {
+  transition: all 0.2s, height 1ms;
+}
+
 body {
   @apply font-sans;
   font-size: 16px;
@@ -24,10 +47,19 @@ body {
 }
 
 a {
-  @apply text-blue;
-  text-decoration: none;
+  @apply text-white;
+  text-decoration: underline;
   &:hover {
     @apply text-blue-light;
+  }
+}
+
+.hero-links {
+  a {
+    color: $blue-dark;
+    &:hover {
+      color: $grey;
+    }
   }
 }
 
@@ -43,7 +75,7 @@ a {
 
 .logo-main-text {
   @apply font-serif;
-  @apply text-white;
+  @apply text-blue-dark;
 
   font-size: 5rem;
   line-height: 4rem;
@@ -53,33 +85,31 @@ a {
   user-select: none;
 }
 
-/* animated mouse scroll indicator */
-.scroll-mouse {
-  width: 32px;
-  height: 48px;
-  border: 2px solid rgba(255, 255, 255, 0.06);
-  border-radius: 24px;
-  display: flex;
-  justify-content: center;
-  position: relative;
+.capital-font {
+  @apply font-serif;
 }
 
-.scroll-mouse-point {
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  border-radius: 6px;
-  background-color: rgba(255, 255, 255, 0.1);
-  animation: mousemove 2s infinite;
+/* components */
+
+.bullet-point {
+  margin: 1rem 0;
+  dt {
+    font-weight: bold;
+    color: $green-light;
+    font-size: 1.2rem;
+    img {
+      height: 2rem;
+      width: 2rem;
+      margin-right: 0.2rem;
+      vertical-align: middle;
+    }
+  }
+  dd {
+    margin-left: 2.5rem;
+    color: $grey-light;
+  }
 }
 
-@keyframes mousemove {
-  from {
-    top: 8px;
-    opacity: 0;
-  }
-  to {
-    top: 34px;
-    opacity: 1;
-  }
+button[disabled] {
+  background-color: $blue-light;
 }

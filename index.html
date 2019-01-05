@@ -4,48 +4,34 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Nitin Jadhav's Portfolio</title>
-    <link rel="shortcut icon" href="./media//favicon.ico" />
+    <link rel="shortcut icon" href="./media/favicon.ico" />
     <link rel="icon" href="./media/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <body class="">
-    <section class="h-screen bg-purple-dark px-4 py-8">
+    <section
+      class="min-h-screen px-4 py-8 bg-beige flex flex-col justify-between"
+    >
       <include src="./src/pages/header.html"></include>
       <include src="./src/pages/hero.html"></include>
-      <div class="scroll-mouse mx-auto my-2">
-        <div class="scroll-mouse-point"></div>
+      <div class="h-8 flex justify-center">
+        <img
+          src="./media/down-arrow.svg"
+          alt="down-arrow"
+          class="w-8 h-8 opacity-25"
+        />
       </div>
     </section>
-    <section class="h-screen bg-purple-lighter px-4 py-8">sd</section>
-    <section class="h-screen bg-red-light">sd</section>
+    <section
+      class="min-h-screen bg-grey-darker px-4 py-16 flex justify-center items-center"
+    >
+      <include src="./src/pages/contact.html"></include>
+    </section>
+    <!-- <section class="h-screen bg-red-light">sd</section> -->
     <section class="bg-black px-4">
       <include src="./src/pages/footer.html"></include>
     </section>
-    <!--
-      <section class="">
-        <include src="./src/pages/header.html"></include>
-        <section id="hero" class="section">
-          <content class="container dark-panel columns">
-            <include src="./src/pages/short-about.html"></include>
-          </content>
-        </section>
-      </section>
-      <section id="contact" class="section main-section page page--dark ">
-        <content class="container dark-panel">
-          <include src="./src/pages/contact.html"></include>
-        </content>
-      </section>
-
-      <footer class="footer main-footer page page--dark">
-        <div class="content has-text-centered">
-          <p>
-            Handcoded in 2018 with <a href="https://bulma.io">Bulma</a> and
-            <a href="https://parceljs.org/">ParcelJS</a>
-          </p>
-        </div>
-      </footer>
-    -->
     <script src="./src/index.js"></script>
   </body>
 </html>

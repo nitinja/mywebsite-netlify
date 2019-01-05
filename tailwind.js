@@ -51,11 +51,14 @@ let colors = {
   "grey-light": "#dae1e7",
   white: "#ffffff",
 
+  beige: "#f8f8f8",
+
   "red-light": "#ef5753",
   "green-light": "#51d88a",
 
   blue: "#3490DC",
   "blue-light": "#6CB2EB",
+  "blue-dark": "#34495e",
 
   "purple-dark": "#794acf",
   "purple-lighter": "#d6bbfc"

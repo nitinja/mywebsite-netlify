@@ -1,63 +1,76 @@
-<div>
-    <div class="section-title title-font">What can I do for you?</div>
-    <div class="bullet-point">
-        <dt>
-            <img src="./media/tick.svg" alt="bullet-point"> Design complete UX & UI
-        </dt>
-        <dd>Build a complete Design system, UX and/or UI Solution for your product idea and your backend</dd>
+<div class="container mx-auto flex flex-col">
+  <div class="capital-font text-4xl mb-4 text-white tracking-wide">
+    What can I do for you?
+  </div>
+  <div class="bullet-point">
+    <dt>
+      <img src="./media/tick.svg" alt="bullet-point" /> Design complete UX & UI
+    </dt>
+    <dd>
+      Build a complete Design system, UX and/or UI Solution for your product
+      idea and your backend
+    </dd>
+  </div>
+  <div class="bullet-point">
+    <dt>
+      <img src="./media/tick.svg" alt="bullet-point" /> Usability review of your
+      app
+    </dt>
+    <dd>
+      Review your existing UI comprehensively and create UX improvements plan &
+      guidelines
+    </dd>
+  </div>
+  <div class="bullet-point">
+    <dt><img src="./media/tick.svg" alt="bullet-point" /> CSS Refactoring</dt>
+    <dd>Work with your team to optimize your existing CSS architecture</dd>
+  </div>
+  <div class="bullet-point">
+    <dt>
+      <img src="./media/tick.svg" alt="bullet-point" /> Performance Refactoring
+    </dt>
+    <dd>Work with your team to optimize UI performance</dd>
+  </div>
+  <div class="bullet-point">
+    <dt><img src="./media/tick.svg" alt="bullet-point" /> Frontend Training</dt>
+    <dd>
+      Train your team in Javascript/React/Angular/NodeJS/CSS and other frontend
+      technologies
+    </dd>
+  </div>
+  <div class="bullet-point">
+    <dt>
+      <img src="./media/coffee.svg" alt="bullet-point" /> Grab a cup coffee with
+      you!
+    </dt>
+    <dd>'Nuff Said!</dd>
+  </div>
+
+  <form name="contact" class="flex flex-col justify-between h-48 mt-16" netlify>
+    <div class="capital-font text-4xl mb-4 text-white tracking-wide">
+      Contact
     </div>
-    <div class="bullet-point">
-        <dt> 
-            <img src="./media/tick.svg" alt="bullet-point"> Usability review of your app
-        </dt>
-        <dd>Review your existing UI comprehensively and create UX improvements plan & guidelines</dd>
-    </div>
-    <div class="bullet-point">
-        <dt>
-            <img src="./media/tick.svg" alt="bullet-point"> CSS Refactoring
-        </dt>
-        <dd>Work with your team to optimize your existing CSS architecture</dd>
-    </div>
-    <div class="bullet-point">
-        <dt>
-            <img src="./media/tick.svg" alt="bullet-point"> Performance Refactoring
-        </dt>
-        <dd>Work with your team to optimize UI performance</dd>
-    </div>
-    <div class="bullet-point">
-        <dt>
-            <img src="./media/tick.svg" alt="bullet-point"> Frontend Training
-        </dt>
-        <dd>Train your team in Javascript/React/Angular/NodeJS/CSS and other frontend technologies</dd>
-    </div>
-    <div class="bullet-point">
-        <dt>
-            <img src="./media/coffee.svg" alt="bullet-point"> Grab a cup coffee with you!
-        </dt>
-        <dd>'Nuff Said!</dd>
-    </div>
-</div>
-<div style="margin:4rem 0;">
-    <div class="section-title title-font">Contact</div>
-    <form name="contact" netlify>
-        <div class="field">
-            <div class="control has-icons-right">
-                <input class="input" name="email" type="email" placeholder="Your Email" value="">
-                <span class="icon is-small is-right">
-                    <i class="fas fa-exclamation-triangle"></i>
-                </span>
-            </div>
-            <!-- <p class="help is-danger">This email is invalid</p> -->
-        </div>
-        <div class="field">
-            <div class="control">
-                <textarea class="textarea" name="message" placeholder="Message and optional contact number"></textarea>
-            </div>
-        </div>
-        <div class="field">
-            <div class="control">
-                <input type="submit" id="submitContactButton" class="button is-info is-fullwidth" disabled></input>
-            </div>
-        </div>
-    </form>
+
+    <input
+      class="rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
+      name="email"
+      type="email"
+      placeholder="Your Email"
+      value=""
+    />
+    <textarea
+      class="rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
+      name="message"
+      placeholder="Message and optional contact number"
+    ></textarea>
+    <button
+      class="bg-blue text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+      type="button"
+      type="submit"
+      id="submitContactButton"
+      disabled
+    >
+      Sign In
+    </button>
+  </form>
 </div>
