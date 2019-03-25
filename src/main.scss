@@ -1,6 +1,6 @@
 /**
  * Tailwind styles
- * 
+ *
  * This injects Tailwind's base styles, which is a combination of
  * Normalize.css and some additional base styles.
  *
@@ -43,7 +43,7 @@ $purple-lighter: #d6bbfc;
 body {
   @apply font-sans;
   font-size: 16px;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
 }
 
 a {
