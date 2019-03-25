@@ -34,4 +34,5 @@ window.addEventListener("load", function() {
 
   //init form handling
   //initFormValidation();
+  //TODO test
 });

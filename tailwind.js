@@ -56,7 +56,7 @@ let colors = {
   "red-light": "#ef5753",
   "green-light": "#51d88a",
 
-  blue: "#3490DC",
+  blue: "#0088f7",
   "blue-light": "#6CB2EB",
   "blue-dark": "#34495e",
 
