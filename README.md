@@ -1,4 +1,6 @@
-# Repo for my new website
+# OLD Repo for my new website
+
+see [new repo with GatsbyJS](https://github.com/nitinja/nitinj.com-gatsby)
 
 ## Current domain is nitinj.com
 
